@@ -7,14 +7,15 @@ public class Main {
 	
 
 	public static void main(String[] args) {
-		System.out.println("---------------------");
+		
 		Scanner input = new Scanner(System.in);
-			//int towpersons=18;
-			//int family=10;
-			int c =input.nextInt();
-			int single=20;
-			while(c!=0) {
-				if(c==1) {
+			int towpersons=18;
+			int family=10;
+		        int single=20;
+			char c =input.next().charAt(0);
+			
+			while(c!='n') {
+				if(c=='y') {
 					Reservation y=new Reservation("single",single);
 					y.room();
 					System.out.println("---------------------");
@@ -22,7 +23,7 @@ public class Main {
 					System.out.println("---------------------");
 					single=y.num;
 				}
-				c=input.nextInt();
+				c=input.next().charAt(0);
 				
 			}
 		
