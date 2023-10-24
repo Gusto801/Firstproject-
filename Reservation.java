@@ -22,23 +22,23 @@ public class Reservation {
 		  if(capacity=="single") {
 			  if(num !=0) {
 				  System.out.println("Available\n" +"prix is : "+prix( capacity)  ); 
-				  System.out.println(num );
+				  System.out.println("number of rooms availble : "+num );
 			  }else {
 				  x=false;
 			  }  
 		  }
 	  else if(capacity=="towpersons") {
 			  if(num !=0) {
-				  System.out.print("Available\n" +"prix is : "+ prix( capacity)  ); 
-				  System.out.println(num );
+				  System.out.println("Available\n" +"prix is : "+ prix( capacity)  ); 
+				  System.out.println("number of rooms availble : "+num );
 			  }else {
 				  x=false;
 			  }  
 		  }
 		  else if(capacity=="family") {
 			  if(num !=0) {
-				  System.out.print("Available\n" +"prix is : "+ prix( capacity) ); 
-				  System.out.println(num );
+				  System.out.println("Available\n" +"prix is : "+ prix( capacity) ); 
+				  System.out.println("number of rooms availble : "+num );
 			  }else {
 				  x=false;
 			  }  
@@ -50,19 +50,18 @@ public class Reservation {
       
 }
 	  public void info(int numofday,String fullname,String phone) {
-		  System.out.println("dear "+ fullname + " total prix is : "+prix(capacity)*numofday );
-		  
-		  num--;
+		  System.out.println("dear "+ fullname + " total prix is : "+prix(capacity)*numofday );  
 	  }
-	  public void comfirmation(char c) {
+	 /* public void comfirmation(char c) {
 		  if(c=='y' || c=='Y') {
 			  System.out.println("reservation done");
-			  num--;
+			  
 		  }
 		  if(c=='n' || c=='N') {
 			  return;
 		  }
-	  }
+	  }*/
 		  
 	 
 }
+
